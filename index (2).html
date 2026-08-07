@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mister Solar Guy | Powered by Plug PV — Premium Solar Solutions, Saugerties NY</title>
+<meta name="description" content="Mister Solar Guy Powered by Plug PV offers turnkey residential & commercial solar panels, battery storage, EV charging and monitoring across New York State.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0A0F1A;
+    --ink-2:#0F1830;
+    --ink-3:#14203E;
+    --panel: rgba(255,255,255,0.04);
+    --panel-border: rgba(203,161,53,0.18);
+    --gold: #CBA135;
+    --gold-bright: #F2C464;
+    --amber-glow: #F4B942;
+    --cream: #F6F2E9;
+    --ash: #B7C0D6;
+    --ash-dim: #7C88A6;
+    --line: rgba(203,161,53,0.22);
+    --radius: 18px;
+    --shadow-lux: 0 30px 80px -30px rgba(0,0,0,0.65);
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+
+  html{ scroll-behavior: smooth; }
+
+  ::selection{
+    background: var(--gold);
+    color: #14100a;
+  }
+  ::-moz-selection{
+    background: var(--gold);
+    color: #14100a;
+  }
+
+  body{
+    background: var(--ink);
+    color: var(--cream);
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  img{ max-width:100%; display:block; }
+
+  a{ color: inherit; text-decoration: none; }
+
+  h1,h2,h3,h4{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--cream);
+  }
+
+  .eyebrow{
+    font-family:'Sora', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: 0.72rem;
+    color: var(--gold);
+    font-weight: 600;
+    display:inline-flex;
+    align-items:center;
+    gap: 12px;
+  }
+  .eyebrow::before{
+    content:"";
+    width: 30px; height:1px;
+    background: var(--gold);
+    display:inline-block;
+  }
+
+  .wrap{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  section{ position: relative; }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding: 16px 34px;
+    border-radius: 999px;
+    font-family:'Sora',sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor:pointer;
+    border: 1px solid transparent;
+    transition: transform .35s ease, box-shadow .35s ease, background .35s ease, color .35s ease;
+    white-space: nowrap;
+  }
+  .btn-gold{
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold) 60%);
+    color: #17130a;
+    box-shadow: 0 14px 34px -12px rgba(203,161,53,0.55);
+  }
+  .btn-gold:hover{ transform: translateY(-3px); box-shadow: 0 20px 44px -12px rgba(203,161,53,0.7); }
+  .btn-ghost{
+    background: transparent;
+    border-color: rgba(246,242,233,0.28);
+    color: var(--cream);
+  }
+  .btn-ghost:hover{ border-color: var(--gold); color: var(--gold-bright); transform: translateY(-3px); }
+
+  /* ============ TOP BAR ============ */
+  .topbar{
+    background: #070B14;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.78rem;
+    color: var(--ash);
+  }
+  .topbar .wrap{
+    display:flex; justify-content:space-between; align-items:center;
+    padding: 9px 32px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .topbar a{ color: var(--ash); transition: color .25s ease; }
+  .topbar a:hover{ color: var(--gold-bright); }
+  .topbar-links{ display:flex; gap: 26px; align-items:center; flex-wrap: wrap; }
+  .topbar-links span.sep{ opacity:.3; }
+
+  /* ============ HEADER ============ */
+  header.site-header{
+    position: sticky; top:0; z-index: 500;
+    background: rgba(10,15,26,0.82);
+    backdrop-filter: blur(16px) saturate(140%);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 16px 32px;
+  }
+  .brand{ display:flex; align-items:center; gap:16px; }
+  .brand img{
+    height: 62px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 18px rgba(203,161,53,0.18));
+  }
+  .brand-text{
+    display:flex; flex-direction:column; line-height:1.15;
+  }
+  .brand-text .name{
+    font-family:'Fraunces',serif;
+    font-size: 1.32rem;
+    font-weight: 600;
+    color: var(--cream);
+    letter-spacing: 0.01em;
+  }
+  .brand-text .tag{
+    font-size: 0.66rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 3px;
+  }
+
+  nav.menu ul{
+    list-style:none;
+    display:flex;
+    gap: 44px;
+    align-items:center;
+  }
+  nav.menu a{
+    font-size: 0.86rem;
+    letter-spacing: 0.04em;
+    color: var(--ash);
+    position: relative;
+    padding: 6px 0;
+    transition: color .3s ease;
+  }
+  nav.menu a::after{
+    content:"";
+    position:absolute; left:0; bottom:0;
+    width:0; height:1px;
+    background: var(--gold);
+    transition: width .3s ease;
+  }
+  nav.menu a:hover{ color: var(--cream); }
+  nav.menu a:hover::after{ width: 100%; }
+
+  .nav-cta{ display:flex; align-items:center; gap: 18px; }
+  .nav-cta .btn{ padding: 13px 26px; }
+
+  .burger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    background:none; border:none; cursor:pointer;
+    padding: 6px;
+  }
+  .burger span{ width:26px; height:2px; background: var(--gold); display:block; }
+
+  /* ============ HERO ============ */
+  .hero{
+    position: relative;
+    min-height: 92vh;
+    display:flex;
+    align-items:center;
+    overflow: hidden;
+  }
+  .hero-bg{
+    position:absolute; inset:0;
+    background-image: linear-gradient(180deg, rgba(8,12,22,0.55) 0%, rgba(8,12,22,0.78) 55%, var(--ink) 100%), url('https://static.investindia.gov.in/s3fs-public/2022-02/shutterstock_662045977.jpg');
+    background-size: cover;
+    background-position: center 62%;
+    transform: scale(1.06);
+  }
+  .hero-orbit{
+    position:absolute;
+    top: -220px; right: -220px;
+    width: 640px; height:640px;
+    border-radius:50%;
+    background: radial-gradient(circle at 35% 35%, rgba(244,185,66,0.35), rgba(244,185,66,0) 62%);
+    filter: blur(10px);
+    pointer-events:none;
+  }
+  .hero-arc{
+    position:absolute;
+    left:50%; top:50%;
+    width: 1400px; height:1400px;
+    transform: translate(-50%,-58%);
+    border-radius: 50%;
+    border: 1px solid rgba(203,161,53,0.14);
+    pointer-events:none;
+  }
+  .hero-arc.small{ width: 980px; height:980px; border-color: rgba(203,161,53,0.1); }
+
+  .hero .wrap{
+    position: relative; z-index: 2;
+    padding-top: 70px; padding-bottom: 70px;
+  }
+  .hero-content{ max-width: 700px; }
+  .hero h1{
+    font-size: clamp(2.6rem, 5.4vw, 4.4rem);
+    line-height: 1.06;
+    margin: 22px 0 26px;
+  }
+  .hero h1 em{
+    font-style: normal;
+    color: var(--gold-bright);
+    background: linear-gradient(90deg, var(--gold-bright), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p.lead{
+    font-size: 1.08rem;
+    color: var(--ash);
+    max-width: 560px;
+    margin-bottom: 38px;
+  }
+  .hero-actions{ display:flex; gap:18px; flex-wrap:wrap; align-items:center; }
+  .hero-stats{
+    display:flex; gap: 46px;
+    margin-top: 64px;
+    flex-wrap: wrap;
+  }
+  .hero-stats div{ border-left: 1px solid var(--line); padding-left: 18px; }
+  .hero-stats .num{
+    font-family:'Fraunces',serif; font-size: 1.9rem; color: var(--gold-bright); font-weight:600;
+  }
+  .hero-stats .lbl{ font-size:0.74rem; letter-spacing:0.08em; color: var(--ash-dim); text-transform: uppercase; margin-top:4px; }
+
+  /* ============ SECTION GENERIC ============ */
+  .section{ padding: 120px 0; }
+  .section-head{ max-width: 680px; margin-bottom: 60px; }
+  .section-head h2{ font-size: clamp(1.9rem, 3.4vw, 2.7rem); margin-top:18px; line-height:1.18; }
+  .section-head p{ color: var(--ash); margin-top: 18px; font-size: 1.02rem; }
+  .section-alt{ background: linear-gradient(180deg, var(--ink) 0%, var(--ink-2) 100%); }
+
+  .divider{
+    height:1px;
+    background: linear-gradient(90deg, transparent, var(--line), transparent);
+    max-width: 1220px; margin: 0 auto;
+  }
+
+  /* ============ ABOUT ============ */
+  .about-grid{
+    display:grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items:center;
+  }
+  .about-media{
+    position:relative;
+    border-radius: var(--radius);
+    overflow:hidden;
+    box-shadow: var(--shadow-lux);
+    border: 1px solid var(--panel-border);
+  }
+  .about-media img{ width:100%; height: 520px; object-fit:cover; }
+  .about-badge{
+    position:absolute; left:26px; bottom:26px;
+    background: rgba(10,15,26,0.72);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 24px;
+  }
+  .about-badge .num{ font-family:'Fraunces',serif; color:var(--gold-bright); font-size:1.7rem; }
+  .about-badge .lbl{ font-size:0.72rem; color: var(--ash); letter-spacing:0.06em; text-transform:uppercase; margin-top:2px; }
+
+  .about-copy p{ color: var(--ash); margin-bottom: 18px; }
+  .about-copy ul{
+    list-style:none;
+    margin: 26px 0 34px;
+    display:grid;
+    gap: 14px;
+  }
+  .about-copy li{
+    display:flex; align-items:center; gap: 14px;
+    font-size: 0.96rem; color: var(--cream);
+  }
+  .about-copy li::before{
+    content:"";
+    width:9px; height:9px;
+    border-radius:50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 4px rgba(203,161,53,0.16);
+    flex-shrink:0;
+  }
+
+  /* ============ SERVICES ============ */
+  .services-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .service-card{
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--radius);
+    overflow:hidden;
+    transition: transform .4s ease, box-shadow .4s ease, border-color .4s ease;
+    display:flex; flex-direction:column;
+  }
+  .service-card:hover{
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lux);
+    border-color: rgba(203,161,53,0.5);
+  }
+  .service-media{
+    position:relative;
+    height: 220px;
+    overflow:hidden;
+  }
+  .service-media img{
+    width:100%; height:100%; object-fit:cover;
+    transition: transform .7s ease;
+  }
+  .service-card:hover .service-media img{ transform: scale(1.08); }
+  .service-media::after{
+    content:"";
+    position:absolute; inset:0;
+    background: linear-gradient(180deg, rgba(10,15,26,0) 40%, rgba(10,15,26,0.9) 100%);
+  }
+  .service-index{
+    position:absolute; top:16px; right:18px; z-index:2;
+    font-family:'Fraunces',serif;
+    font-size: 0.82rem;
+    color: var(--gold-bright);
+    background: rgba(10,15,26,0.65);
+    border: 1px solid var(--line);
+    padding: 5px 12px;
+    border-radius: 999px;
+    letter-spacing: 0.08em;
+  }
+  .service-body{ padding: 26px 28px 30px; flex:1; display:flex; flex-direction:column; }
+  .service-body h3{ font-size: 1.28rem; margin-bottom: 12px; }
+  .service-body p{ color: var(--ash); font-size: 0.92rem; flex:1; margin-bottom: 18px; }
+  .service-link{
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    font-weight:600;
+    display:inline-flex; align-items:center; gap:8px;
+    width: fit-content;
+  }
+  .service-link .arrow{ transition: transform .3s ease; }
+  .service-card:hover .service-link .arrow{ transform: translateX(5px); }
+
+  .services-cta{ text-align:center; margin-top: 56px; }
+
+  /* ============ WHY SOLAR ============ */
+  .why-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items:center;
+  }
+  .why-panel{
+    background: linear-gradient(160deg, rgba(203,161,53,0.09), rgba(203,161,53,0.02));
+    border: 1px solid var(--panel-border);
+    border-radius: var(--radius);
+    padding: 46px;
+  }
+  .why-panel h3{ font-size:1.5rem; margin-bottom:16px; }
+  .why-panel p{ color: var(--ash); margin-bottom: 16px; font-size:0.96rem; }
+  .why-stats{ display:grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 28px; }
+  .why-stat{
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+  }
+  .why-stat .n{ font-family:'Fraunces',serif; font-size:1.7rem; color: var(--gold-bright); }
+  .why-stat .l{ font-size:0.74rem; color: var(--ash-dim); text-transform:uppercase; letter-spacing:0.06em; margin-top:3px; }
+
+  /* ============ GALLERY ============ */
+  .gallery-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 18px;
+  }
+  .gallery-item{
+    position:relative;
+    border-radius: 14px;
+    overflow:hidden;
+    border: 1px solid var(--panel-border);
+  }
+  .gallery-item img{ width:100%; height:100%; object-fit:cover; transition: transform .6s ease, filter .4s ease; filter: saturate(0.92); }
+  .gallery-item:hover img{ transform: scale(1.1); filter: saturate(1.1); }
+  .gallery-item.tall{ grid-row: span 2; }
+  .gallery-item.wide{ grid-column: span 2; }
+  .gallery-cap{
+    position:absolute; left:0; right:0; bottom:0;
+    padding: 16px 18px;
+    background: linear-gradient(180deg, transparent, rgba(7,11,20,0.92));
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+  }
+
+  /* ============ REVIEWS ============ */
+  .reviews-strip{
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap: 24px;
+    margin-bottom: 54px;
+  }
+  .rating-block{ display:flex; align-items:center; gap:20px; }
+  .rating-num{ font-family:'Fraunces',serif; font-size: 3.2rem; color: var(--gold-bright); line-height:1; }
+  .stars{ color: var(--gold); letter-spacing: 3px; font-size:1.1rem; }
+  .rating-sub{ color: var(--ash-dim); font-size:0.82rem; margin-top:4px; }
+
+  .reviews-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .review-card{
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--radius);
+    padding: 32px 30px;
+    display:flex; flex-direction:column;
+    gap: 18px;
+  }
+  .review-card .stars{ font-size:0.9rem; }
+  .review-card p.quote{ color: var(--ash); font-size:0.94rem; font-style: italic; }
+  .review-who{ display:flex; align-items:center; gap:14px; margin-top:auto; }
+  .review-avatar{
+    width:42px; height:42px; border-radius:50%;
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+    display:flex; align-items:center; justify-content:center;
+    color:#17130a; font-family:'Fraunces',serif; font-weight:700;
+  }
+  .review-who .who-name{ font-size:0.88rem; color:var(--cream); font-weight:500; }
+  .review-who .who-loc{ font-size:0.74rem; color: var(--ash-dim); }
+
+  /* ============ FAQ ============ */
+  .faq-list{ max-width: 880px; }
+  .faq-item{
+    border-bottom: 1px solid var(--line);
+  }
+  .faq-q{
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 26px 4px;
+    cursor:pointer;
+    font-family:'Fraunces',serif;
+    font-size: 1.08rem;
+    color: var(--cream);
+  }
+  .faq-q .plus{
+    color: var(--gold);
+    font-size: 1.4rem;
+    transition: transform .35s ease;
+    flex-shrink:0;
+    margin-left: 20px;
+  }
+  .faq-item.open .faq-q .plus{ transform: rotate(45deg); }
+  .faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition: max-height .4s ease, padding .4s ease;
+    color: var(--ash);
+    font-size: 0.94rem;
+    padding: 0 4px;
+  }
+  .faq-item.open .faq-a{ max-height: 260px; padding: 0 4px 26px; }
+
+  /* ============ CONTACT / CTA ============ */
+  .cta-banner{
+    position: relative;
+    padding: 100px 0;
+    text-align:center;
+    overflow:hidden;
+  }
+  .cta-banner-bg{
+    position:absolute; inset:0;
+    background: radial-gradient(ellipse at center, rgba(203,161,53,0.16), transparent 65%), var(--ink-3);
+  }
+  .cta-banner .wrap{ position:relative; z-index:2; }
+  .cta-banner h2{ font-size: clamp(1.9rem, 4vw, 2.9rem); margin: 18px auto 20px; max-width: 760px; }
+  .cta-banner p{ color: var(--ash); max-width: 560px; margin: 0 auto 38px; }
+  .cta-actions{ display:flex; gap: 18px; justify-content:center; flex-wrap:wrap; }
+
+  /* ============ FOOTER ============ */
+  footer{
+    background: #060A12;
+    border-top: 1px solid var(--line);
+    padding-top: 90px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns: 1.3fr 0.8fr 1fr 1.3fr;
+    gap: 50px;
+    padding-bottom: 70px;
+  }
+  .footer-brand .brand{ margin-bottom: 20px; }
+  .footer-brand p{ color: var(--ash-dim); font-size:0.88rem; max-width: 300px; margin-bottom: 22px;}
+  .social-row{ display:flex; gap: 12px; }
+  .social-row a{
+    width: 38px; height:38px;
+    border: 1px solid var(--line);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:0.9rem;
+    color: var(--gold);
+    transition: all .3s ease;
+  }
+  .social-row a:hover{ background: var(--gold); color:#14100a; transform: translateY(-3px); }
+
+  .footer-col h4{
+    font-size: 0.78rem;
+    text-transform:uppercase;
+    letter-spacing:0.16em;
+    color: var(--gold);
+    margin-bottom: 24px;
+    font-family:'Sora',sans-serif;
+    font-weight:600;
+  }
+  .footer-col ul{ list-style:none; display:grid; gap: 13px; }
+  .footer-col a{ color: var(--ash); font-size: 0.88rem; transition: color .25s ease, padding-left .25s ease; }
+  .footer-col a:hover{ color: var(--gold-bright); padding-left: 4px; }
+
+  .footer-contact li{ display:flex; gap:12px; color: var(--ash); font-size:0.88rem; align-items:flex-start; }
+  .footer-contact .ic{ color: var(--gold); flex-shrink:0; margin-top:2px; }
+
+  .map-wrap{
+    border-radius: 14px;
+    overflow:hidden;
+    border: 1px solid var(--line);
+    filter: grayscale(0.4) contrast(1.05);
+    height: 220px;
+  }
+  .map-wrap iframe{ width:100%; height:100%; border:0; display:block; }
+
+  .footer-bottom{
+    border-top: 1px solid var(--line);
+    padding: 26px 0;
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap:wrap; gap: 12px;
+    font-size: 0.78rem;
+    color: var(--ash-dim);
+  }
+  .footer-bottom a{ color: var(--ash-dim); }
+  .footer-bottom a:hover{ color: var(--gold); }
+
+  /* back to top */
+  .to-top{
+    position: fixed; right: 26px; bottom: 26px; z-index: 400;
+    width: 48px; height:48px; border-radius:50%;
+    background: var(--gold);
+    color:#14100a;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow: 0 14px 30px -8px rgba(203,161,53,0.6);
+    opacity:0; pointer-events:none;
+    transition: opacity .3s ease, transform .3s ease;
+    font-size: 1.1rem;
+  }
+  .to-top.show{ opacity:1; pointer-events:auto; }
+  .to-top:hover{ transform: translateY(-4px); }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 980px){
+    .about-grid, .why-grid{ grid-template-columns: 1fr; }
+    .services-grid{ grid-template-columns: repeat(2,1fr); }
+    .gallery-grid{ grid-template-columns: repeat(2,1fr); }
+    .reviews-grid{ grid-template-columns: 1fr; }
+    .footer-grid{ grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 760px){
+    nav.menu{ display:none; }
+    .burger{ display:flex; }
+    .nav-cta .btn span.btn-label{ display:none; }
+    .services-grid{ grid-template-columns: 1fr; }
+    .gallery-grid{ grid-template-columns: repeat(2,1fr); grid-auto-rows: 160px; }
+    .gallery-item.wide{ grid-column: span 1; }
+    .footer-grid{ grid-template-columns: 1fr; }
+    .topbar .wrap{ justify-content:center; text-align:center; }
+    .section{ padding: 80px 0; }
+    .hero{ min-height: auto; padding-top: 40px; }
+  }
+
+  nav.menu.mobile-open ul{
+    display:flex; flex-direction:column;
+    position:absolute; top: 100%; left:0; right:0;
+    background: #0A0F1AF2;
+    padding: 26px 32px 34px;
+    gap: 22px;
+    border-bottom: 1px solid var(--line);
+  }
+  nav.menu.mobile-open{ display:block; }
+
+  :focus-visible{ outline: 2px solid var(--gold-bright); outline-offset: 3px; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-links">
+      <span>Schedule a consultation today</span>
+    </div>
+    <div class="topbar-links">
+      <a href="tel:8456634679">(845) 663-4679</a>
+      <span class="sep">|</span>
+      <a href="mailto:roger@mistersolarguy.com">roger@mistersolarguy.com</a>
+      <span class="sep">|</span>
+      <span>Mon – Sun, 8:00 AM – 10:00 PM</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="#home" class="brand">
+      <img src="https://mistersolarguy.com/wp-content/uploads/2026/03/new-logo-1920w.png" alt="Mister Solar Guy logo">
+      <span class="brand-text">
+        <span class="name">Mister Solar Guy</span>
+        <span class="tag">Powered by Plug PV</span>
+      </span>
+    </a>
+
+    <nav class="menu" id="mainMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="tel:8456634679" class="btn btn-ghost"><span class="btn-label">Call Now</span> ☎ (845) 663-4679</a>
+      <button class="burger" id="burgerBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-orbit"></div>
+  <div class="hero-arc"></div>
+  <div class="hero-arc small"></div>
+  <div class="wrap">
+    <div class="hero-content">
+      <span class="eyebrow">Serving New York State &amp; Beyond</span>
+      <h1>Bringing the power of the <em>sun</em> to the world, one house at a time</h1>
+      <p class="lead">Turnkey solar solutions engineered for your property — panels, battery storage, EV charging and smart monitoring, designed and installed by a team that's been powering New York since 2016.</p>
+      <div class="hero-actions">
+        <a href="https://mistersolarguy.com/our-services/" target="_blank" rel="noopener" class="btn btn-gold">Explore Services →</a>
+        <a href="#contact" class="btn btn-ghost">Get a Free Consultation</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="num">2016</div><div class="lbl">Est. in New York</div></div>
+        <div><div class="num">$5,000</div><div class="lbl">NY Tax Credit Available</div></div>
+        <div><div class="num">$0</div><div class="lbl">Down w/ NY‑Sun Program</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-media">
+        <img src="https://mistersolarguy.com/wp-content/uploads/2026/03/AdobeStock_1212279384-1024x683.jpeg" alt="Residential solar panel installation by Mister Solar Guy">
+        <div class="about-badge">
+          <div class="num">9+ yrs</div>
+          <div class="lbl">Powering NY Homes</div>
+        </div>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">About Us</span>
+        <h2 style="margin: 18px 0 22px;">Experienced solar energy company, built around you</h2>
+        <p>If you're new to solar energy, it may be difficult to picture how this technology could work for you. That's where the team here at Mister Solar Guy Powered by Plug PV comes into play. Our solar energy provider offers complete turnkey solutions and customized systems that are completely tailored to the energy needs of your property.</p>
+        <p>Ever since we were first established in 2016, we have been supplying New York State and beyond with first-rate consultations, design services, and solar system installations — helping homeowners craft their energy efficiency goals, style preferences, and budget with a dedicated Project Manager at every step.</p>
+        <ul>
+          <li>Custom-engineered, turnkey solar systems</li>
+          <li>Battery storage &amp; EV charger integration</li>
+          <li>Best-in-industry warranty &amp; low-interest financing</li>
+          <li>Roof-mounted or ground-mounted installations</li>
+        </ul>
+        <a href="https://mistersolarguy.com/about-us/" target="_blank" rel="noopener" class="btn btn-gold">Learn More About Us →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============ SERVICES ============ -->
+<section class="section section-alt" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Complete solar solutions, tailored to your property</h2>
+      <p>From first consultation to final switch-on, every system is designed around how your household or business actually uses energy.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-media">
+          <span class="service-index">01</span>
+          <img src="https://mistersolarguy.com/wp-content/uploads/2026/03/AdobeStock_1212279384-1024x683.jpeg" alt="Solar panel installation">
+        </div>
+        <div class="service-body">
+          <h3>Solar Panels</h3>
+          <p>High-efficiency, custom-engineered panel systems — roof or ground-mounted — designed around your property's energy needs and backed by industry-leading warranties.</p>
+          <a href="https://mistersolarguy.com/our-services/" target="_blank" rel="noopener" class="service-link">Explore Service <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-media">
+          <span class="service-index">02</span>
+          <img src="https://avatars.mds.yandex.net/i?id=28b991e52b8cb51f7244595babe96b021637d143-7574298-images-thumbs&n=13" alt="Home battery storage system">
+        </div>
+        <div class="service-body">
+          <h3>Battery Storage</h3>
+          <p>Store the energy your panels generate and keep your home powered day or night — with reliable backup during outages and greater independence from the grid.</p>
+          <a href="https://mistersolarguy.com/our-services/" target="_blank" rel="noopener" class="service-link">Explore Service <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-media">
+          <span class="service-index">03</span>
+          <img src="https://mistersolarguy.com/wp-content/uploads/2026/03/iStock-1019967638-1920w-1024x683.jpg" alt="Electric vehicle charging station">
+        </div>
+        <div class="service-body">
+          <h3>EV Charging</h3>
+          <p>Add a home EV charger powered by your own solar system, so you can fuel your vehicle with clean, self-generated energy instead of the pump.</p>
+          <a href="https://mistersolarguy.com/our-services/" target="_blank" rel="noopener" class="service-link">Explore Service <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-media">
+          <span class="service-index">04</span>
+          <img src="https://www.vedatkaraoglu.com.tr/image/blog/bxiqqCzm1qUDg7sVpOfgGGEBwAPVsN1DEjA22aFm.webp" alt="Solar energy monitoring platform dashboard">
+        </div>
+        <div class="service-body">
+          <h3>Monitoring</h3>
+          <p>Track your system's performance in real time with a smart monitoring platform — see exactly how much energy you're producing, using, and saving.</p>
+          <a href="https://mistersolarguy.com/our-services/" target="_blank" rel="noopener" class="service-link">Explore Service <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-media">
+          <span class="service-index">05</span>
+          <img src="https://static.investindia.gov.in/s3fs-public/2022-02/shutterstock_662045977.jpg" alt="Sunlight powering solar energy systems">
+        </div>
+        <div class="service-body">
+          <h3>Harnessing the Power of the Sun</h3>
+          <p>Going green means saving green. New York homeowners can access an investment tax credit and NY-Sun rebates that make switching to solar more accessible than ever.</p>
+          <a href="https://mistersolarguy.com/our-services/" target="_blank" rel="noopener" class="service-link">Explore Service <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="services-cta">
+      <a href="https://mistersolarguy.com/our-services/" target="_blank" rel="noopener" class="btn btn-gold">Explore All Services →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY GO SOLAR ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="why-grid">
+      <div>
+        <span class="eyebrow">Why Go Solar</span>
+        <h2 style="margin:18px 0 22px;">Going green means saving a different kind of green</h2>
+        <p style="color:var(--ash); margin-bottom:16px;">Get in touch with a member of our team today to ask how you can save on your system. New York State offers homeowners who switch to solar an investment tax credit equal to 25% of the total installation cost, up to $5,000 — and the NY-Sun Incentive Program offers rebates that allow you to go solar with no money up front.</p>
+        <p style="color:var(--ash);">Switching to solar has environmental, financial, and tax benefits — reducing your reliance on an increasingly expensive grid, and letting you sell excess energy back for credit on your bill.</p>
+        <a href="https://mistersolarguy.com/our-services/" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:28px;">Read More →</a>
+      </div>
+      <div class="why-panel">
+        <h3>Serving New York State and beyond</h3>
+        <p>We install roof-mounted systems on asphalt, rolled, and metal roofing — or ground-mounted systems if you prefer. Every option comes with the best warranty in the industry and low-interest financing.</p>
+        <div class="why-stats">
+          <div class="why-stat"><div class="n">25%</div><div class="l">NY Tax Credit</div></div>
+          <div class="why-stat"><div class="n">$5,000</div><div class="l">Max Credit Value</div></div>
+          <div class="why-stat"><div class="n">$0</div><div class="l">Upfront w/ NY-Sun</div></div>
+          <div class="why-stat"><div class="n">100%</div><div class="l">Turnkey Service</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============ GALLERY ============ -->
+<section class="section section-alt" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Gallery</span>
+      <h2>A look at our recent solar work</h2>
+      <p>A glimpse into the panels, batteries, and monitored systems we've brought to homes across New York.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item wide tall">
+        <img src="https://mistersolarguy.com/wp-content/uploads/2026/03/AdobeStock_1212279384-1024x683.jpeg" alt="Rooftop solar panel array">
+        <div class="gallery-cap">Rooftop Solar Array</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://mistersolarguy.com/wp-content/uploads/2026/03/iStock-1019967638-1920w-1024x683.jpg" alt="EV charger installation">
+        <div class="gallery-cap">EV Charging Setup</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://avatars.mds.yandex.net/i?id=28b991e52b8cb51f7244595babe96b021637d143-7574298-images-thumbs&n=13" alt="Battery storage unit">
+        <div class="gallery-cap">Battery Storage</div>
+      </div>
+      <div class="gallery-item tall">
+        <img src="https://static.investindia.gov.in/s3fs-public/2022-02/shutterstock_662045977.jpg" alt="Sunlight over solar panels">
+        <div class="gallery-cap">Harnessing the Sun</div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="https://www.vedatkaraoglu.com.tr/image/blog/bxiqqCzm1qUDg7sVpOfgGGEBwAPVsN1DEjA22aFm.webp" alt="Solar monitoring dashboard">
+        <div class="gallery-cap">Live Energy Monitoring</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="reviews-strip">
+      <div>
+        <span class="eyebrow">Customer Reviews</span>
+        <h2 style="margin-top:18px;">Trusted by homeowners across New York</h2>
+      </div>
+      <div class="rating-block">
+        <div class="rating-num">4.9</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="rating-sub">Based on verified customer reviews</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"From the first consultation to the final install, the team walked us through every option and never pushed us toward anything we didn't need. Our system has been flawless."</p>
+        <div class="review-who">
+          <div class="review-avatar">J</div>
+          <div><div class="who-name">Jason R.</div><div class="who-loc">Saugerties, NY</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"They helped us add battery storage on top of our panels so we're covered during outages. The monitoring app makes it easy to actually see the savings add up."</p>
+        <div class="review-who">
+          <div class="review-avatar">M</div>
+          <div><div class="who-name">Maria D.</div><div class="who-loc">Kingston, NY</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Professional crew, clean install, and they handled all the paperwork for the state tax credit for us. Would recommend Mister Solar Guy to anyone considering solar."</p>
+        <div class="review-who">
+          <div class="review-avatar">T</div>
+          <div><div class="who-name">Tom H.</div><div class="who-loc">Hudson Valley, NY</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-cta">
+      <a href="https://mistersolarguy.com/reviews/" target="_blank" rel="noopener" class="btn btn-ghost">Read All Reviews →</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-alt" id="faqs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQs</span>
+      <h2>Common questions about going solar</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item open">
+        <div class="faq-q"><span>How much can I save by switching to solar?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Savings depend on your property's energy usage and system size, but New York homeowners can access a state investment tax credit worth 25% of installation cost (up to $5,000), plus NY-Sun rebates — meaning many customers go solar with little to no money upfront.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q"><span>Do you install roof-mounted and ground-mounted systems?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes. We install roof-mounted systems on asphalt, rolled, and metal roofing, as well as ground-mounted systems — whichever best fits your property and goals.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q"><span>Can I add a battery or EV charger to my system?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Absolutely. Batteries, EV chargers, and energy monitoring platforms can all be added to a new or existing solar system for extra resilience and control.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q"><span>What areas do you serve?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>We proudly serve homeowners and businesses across New York State and beyond, including the Hudson Valley, Albany, Westchester, and surrounding regions.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q"><span>How do I get started?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Call us at (845) 663-4679 or fill out our contact form to schedule a free consultation. One of our Project Managers will walk you through your options and next steps.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-banner" id="contact">
+  <div class="cta-banner-bg"></div>
+  <div class="wrap">
+    <span class="eyebrow">Ready To Make The Switch?</span>
+    <h2>Schedule a consultation today</h2>
+    <p>Call, email, or send us a message — a member of our team will help you design a system tailored to your property.</p>
+    <div class="cta-actions">
+      <a href="tel:8456634679" class="btn btn-gold">Call (845) 663-4679</a>
+      <a href="mailto:roger@mistersolarguy.com" class="btn btn-ghost">Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <img src="https://mistersolarguy.com/wp-content/uploads/2026/03/new-logo-1920w.png" alt="Mister Solar Guy logo" style="height:56px;">
+          <span class="brand-text">
+            <span class="name" style="font-size:1.12rem;">Mister Solar Guy</span>
+            <span class="tag">Powered by Plug PV</span>
+          </span>
+        </a>
+        <p>Complete turnkey solar solutions and customized systems, tailored to the energy needs of your property since 2016.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/mistersolarguy/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://mistersolarguy.com/" target="_blank" rel="noopener" aria-label="Website">🌐</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Information</h4>
+        <ul class="footer-contact">
+          <li><span class="ic">📍</span><span>4 Skyline Dr 15, Saugerties, NY 12477</span></li>
+          <li><span class="ic">☎</span><span><a href="tel:8456634679">(845) 663-4679</a></span></li>
+          <li><span class="ic">✉</span><span><a href="mailto:roger@mistersolarguy.com">roger@mistersolarguy.com</a></span></li>
+          <li><span class="ic">🕐</span><span>Mon – Sun, 8:00 AM – 10:00 PM</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019892.3397608725!2d-76.08755894999999!3d42.340101049999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6e1975a63a25c7a9%3A0x2cf6022b00d79fd0!2sMister%20Solar%20Guy!5e0!3m2!1sen!2s!4v1786121648372!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 The Ranking Geeks. All Rights Reserved.</span>
+      <span><a href="https://mistersolarguy.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> · <a href="https://mistersolarguy.com/terms-and-conditions/" target="_blank" rel="noopener">Terms &amp; Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script>
+  // Mobile menu toggle
+  const burger = document.getElementById('burgerBtn');
+  const menu = document.getElementById('mainMenu');
+  burger.addEventListener('click', () => {
+    menu.classList.toggle('mobile-open');
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('mobile-open')));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if(!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Back to top
+  const toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', () => {
+    toTop.classList.toggle('show', window.scrollY > 600);
+  });
+  toTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+</script>
+
+</body>
+</html>
